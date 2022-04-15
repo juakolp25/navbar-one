@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: monospace;
 }
 
 body{
@@ -35,6 +36,8 @@ ul{
     justify-content: space-around;
     text-align: center;
     align-items: center;
+    position: fixed;
+    top: 0;
 }
 
 .menu-list{
@@ -42,11 +45,11 @@ ul{
     list-style: none;
 }
 
-.link-menu{
+.link-menu, .link-menu_footer, .link-menu_responsive{
     margin: 0 15px;
 }
 
-.link-menu .link{
+.link-menu .link, .link-menu_footer .link{
     padding: 8px;
     border: var(--border-text);
     color: var(--color-text);
@@ -58,21 +61,108 @@ ul{
     overflow: hidden;
 }
 
-.link-menu .link:hover {
+.link-menu .link:hover , .link-menu_footer .link:hover{
     box-shadow: 0 0 10px #ae00ff, 0 0 25px #001eff, 0 0 50px #ae00ff;
     transition-delay: 0.1s;
 }
    
-.link-menu .link:active {
+.link-menu .link:active, .link-menu_footer .link:active{
     background: #ae00af;
     background: linear-gradient(to top right, #ae00af, #001eff);
     color: #bfbfbf;
     box-shadow: 0 0 8px #ae00ff, 0 0 8px #001eff, 0 0 8px #ae00ff;
 }
    
-.link-menu .link:active{
+.link-menu .link:active, .link-menu_footer .link:active{
     transition: none;
     transition-delay: none;
+}
+
+/* <-- Estilos del toggle --> */
+
+.toggle{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: none;
+}
+
+.toggle .line{
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: var(--color-parrafo);
+    margin-block: 5px;
+    border-radius: 4px;
+    transition: transform 0.5s, opacity 0.25s;
+}
+
+.toggle-line_cruz:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+
+.toggle-line_cruz:nth-child(2){
+    opacity: 0;
+}
+
+.toggle-line_cruz:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.menu-list_responsive{
+    display: none;
+}
+
+/* <-- Pantalla de un celular --> */
+
+@media screen and (max-width: 768px){
+    .toggle{
+        display: block;
+    }
+
+    .menu-list{
+        display: none;
+    }
+
+    .menu-list_responsive{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        top: 70px;
+        background-color: #303030;
+        position: fixed;
+        height: 100vh;
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        left: 100%;
+        transition: all 1.5s;
+    }
+    
+    .link-menu_responsive .link{
+        padding: 8px;
+        color: #bfbfbf;
+        text-transform: uppercase;
+        font-size: 15px;
+        transition: 1s;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    
+    .link-menu_responsive .link:hover{
+        background: #ae00af;
+        background: linear-gradient(to top right, #ae00af, #001eff);
+        box-shadow: 0 0 8px #ae00ff, 0 0 8px #001eff, 0 0 8px #ae00ff;
+    }
+    
+    .link-menu_responsive-visible{
+        left: 0;
+        transition: all 1.5s;
+    }
+
 }
 
 /* Relleno */
@@ -137,7 +227,7 @@ footer{
     padding: 5px;
     text-align: center;
     display: inline-block;
-    position: relative;
+    /*position: relative;*/
     border-radius: 3px;
     background-color: #555;
 }
@@ -161,7 +251,7 @@ footer{
 
 
 #social a span {
-  position: absolute;
+  /*position: absolute;*/
   left: 50%;
   color: #FFF;
   display: none;
