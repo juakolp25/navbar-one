@@ -177,6 +177,7 @@ h1{
     text-transform: uppercase;
     border: var(--border-text);
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* <-- Estios del pie de pagina --> */
