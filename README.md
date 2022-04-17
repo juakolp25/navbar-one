@@ -1,3 +1,3 @@
-# navbar-one
+# Kasares Tattoo
 
-Es una barra de navegacion simple con efecto de sombreado cuando pasas el mouse.
+Diseño inicial de pagina de tatuador
