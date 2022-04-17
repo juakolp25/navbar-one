@@ -176,8 +176,7 @@ h1{
     color: var(--color-parrafo);
     text-transform: uppercase;
     border: var(--border-text);
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0px;
 }
 
 /* <-- Estios del pie de pagina --> */
