@@ -179,7 +179,15 @@ h1{
     margin: 10px 0px;
 }
 
-/* <-- Estios del pie de pagina --> */
+/* <-- Estilos de las card containers del main --> */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(max-content, 1fr);
+    grid-gap: 10px;
+}
+
+/* <-- Estilos del pie de pagina --> */
 
 footer{
     display: block;
