@@ -191,7 +191,9 @@ h1{
 .card{
     width: 250px;
     height: auto;
+    padding: 10px;
     background-color: var(--bg-card);
+    margin: auto;
 }
 
 /* <-- Estilos del pie de pagina --> */
