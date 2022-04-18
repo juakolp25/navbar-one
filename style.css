@@ -3,6 +3,7 @@
     --border-text: 1px solid #303030;
     --bg-navfoot: rgb(8, 8, 8);
     --color-parrafo: rgb(133, 131, 131);
+    --bg-card: rgba(219, 162, 77, 0.5);
 }
 
 *{
@@ -183,8 +184,14 @@ h1{
 
 .grid-container{
     display: grid;
-    grid-template-columns: repeat(max-content, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
+}
+
+.card{
+    width: 250px;
+    height: auto;
+    background-color: var(--bg-card);
 }
 
 /* <-- Estilos del pie de pagina --> */
