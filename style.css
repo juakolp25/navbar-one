@@ -333,7 +333,7 @@ h1, h2{
     }
 }
 
-.conainer-tatuajes{
+.conainer-tatuajes .grid-container{
     width: 100%;
     height: auto;
     background-color: var(--bg-navfoot);
