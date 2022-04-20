@@ -191,12 +191,15 @@ h1{
 }
 
 .card{
-    width: 250px;
+    width: 400x;
     height: auto;
     padding: 10px;
     background-color: var(--bg-navfoot);
     margin: auto;
     color: var(--color-parrafo);
+    border-radius: 5px;
+    border-bottom: 1px solid var(--bg-navfoot);
+    border-left: 1px solid var(--bg-navfoot);
 }
 
 .card_img-container{
