@@ -2,9 +2,10 @@
     --color-text: #ae00ff;
     --border-text: 1px solid #303030;
     --bg-navfoot: rgb(8, 8, 8);
-    --color-parrafo: rgb(133, 131, 131);
+    --color-parrafo: rgb(168, 167, 167);
     --bg-card: rgba(219, 162, 77, 0.5);
     --skills-bar-length: 0%;
+    --bg-dark: rgb(32, 32, 32);
 }
 
 *{
@@ -15,7 +16,7 @@
 }
 
 body{
-    background-color: rgb(197, 197, 202);
+    background-color: var(--bg-dark);
     width: 100%;
 }
 
@@ -232,6 +233,10 @@ h1{
 
 .card_link{
     margin-bottom: 15px;
+}
+
+.card_link a{
+    color: var(--bg-navfoot);
 }
 
 .skills{
