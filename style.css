@@ -237,7 +237,7 @@ h1{
 }
 
 .card_link a{
-    color: var(--bg-navfoot);
+    color: var(--color-text);
 }
 
 .skills{
