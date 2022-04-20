@@ -333,14 +333,14 @@ h1{
 
 /* <-- Disminucion de pantalla --> */
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 930px) {
     .grid-container{
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 5px;
     }
 }
 
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 650px) {
     .grid-container{
         grid-template-columns: repeat(1, 1fr);
     }
