@@ -40,6 +40,7 @@ ul{
     align-items: center;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 .menu-list{
@@ -279,6 +280,7 @@ h1, h2{
     background-color: var(--color-text);
     transition: 2s;
     animation: skills-bar-fill 2s ease-in-out forwards;
+    z-index: 900;
 }
 
 .skills_bar--10::after{
