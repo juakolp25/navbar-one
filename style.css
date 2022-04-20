@@ -189,10 +189,11 @@ h1{
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     margin: 20px 0px;
+    padding: 10px;
 }
 
 .card{
-    width: 400x;
+    width: 400px;
     height: auto;
     padding: 10px;
     background-color: var(--bg-navfoot);
