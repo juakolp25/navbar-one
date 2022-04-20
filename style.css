@@ -4,6 +4,7 @@
     --bg-navfoot: rgb(8, 8, 8);
     --color-parrafo: rgb(133, 131, 131);
     --bg-card: rgba(219, 162, 77, 0.5);
+    --skills-bar-length: 0%;
 }
 
 *{
@@ -186,14 +187,154 @@ h1{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
+    margin: 20px 0px;
 }
 
 .card{
     width: 250px;
     height: auto;
     padding: 10px;
-    background-color: var(--bg-card);
+    background-color: var(--bg-navfoot);
     margin: auto;
+    color: var(--color-parrafo);
+}
+
+.card_img-container{
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.card_img-container img{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.card_header{
+    padding: 10px 0px;
+}
+
+.card_titulo{
+    margin-bottom: 1em;
+    font-size: 19px;
+}
+
+.card_subtitulo{
+    font-size: 15px;
+    opacity: 0.7;
+}
+
+.card_link{
+    margin-bottom: 15px;
+}
+
+.skills{
+    padding: 15px 0;
+}
+
+.skills_header{
+    display: flex;
+    justify-content: space-between;
+    width: 175px;
+}
+
+.skills_tech{
+    margin: 0;
+    font-size: 13px;
+}
+
+.skills_item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+.skills_bar,
+.skills_bar::after{
+    position: relative;
+    width: 175px;
+    height: 8px;
+    background-color: #888;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skills_bar::after{
+    content: "";
+    position: absolute;
+    left: -175px;
+    background-color: var(--color-text);
+    transition: 2s;
+    animation: skills-bar-fill 2s ease-in-out forwards;
+}
+
+.skills_bar--10::after{
+    --skills-bar-length: 10%;
+}
+
+.skills_bar--20::after{
+    --skills-bar-length: 20%;
+}
+
+.skills_bar--30::after{
+    --skills-bar-length: 30%;
+}
+
+.skills_bar--40::after{
+    --skills-bar-length: 40%;
+}
+
+.skills_bar--50::after{
+    --skills-bar-length: 50%;
+}
+
+.skills_bar--60::after{
+    --skills-bar-length: 60%;
+}
+
+.skills_bar--70::after{
+    --skills-bar-length: 70%;
+}
+
+.skills_bar--80::after{
+    --skills-bar-length: 80%;
+}
+
+.skills_bar--90::after{
+    --skills-bar-length: 90%;
+}
+
+.skills_bar--100::after{
+    --skills-bar-length: 100%;
+}
+
+.no-margin{
+    margin: 0;
+}
+
+@keyframes skills-bar-fill {
+    to{
+        transform: translateX(var(--skills-bar-length));
+    }
+}
+
+/* <-- Disminucion de pantalla --> */
+
+@media screen and (max-width: 830px) {
+    .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .grid-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 /* <-- Estilos del pie de pagina --> */
