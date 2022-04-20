@@ -175,7 +175,7 @@ main{
     justify-content: center;
 }
 
-h1{
+h1, h2{
     color: var(--color-parrafo);
     text-transform: uppercase;
     border: var(--border-text);
@@ -200,8 +200,8 @@ h1{
     margin: auto;
     color: var(--color-parrafo);
     border-radius: 5px;
-    border-bottom: 1px solid var(--bg-navfoot);
-    border-left: 1px solid var(--bg-navfoot);
+    border-bottom: 1px solid var(--color-text);
+    border-left: 1px solid var(--color-text);
 }
 
 .card_img-container{
