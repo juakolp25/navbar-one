@@ -15,11 +15,11 @@ btnToggle.addEventListener('click', ()=>{
 
 toggleTheme.addEventListener('click', ()=>{
     document.body.classList.toggle("light");
-    if(toggleIcon.src.includes("imagenes/moon-dark.svg")){
-        toggleIcon.src = 'imagenes/mode-sun.svg';
+    if(toggleIcon.src.includes("Imagenes/moon-dark.svg")){
+        toggleIcon.src = 'Imagenes/mode-sun.svg';
         toggleText.textContent = 'Light Mode';
     }else{
-        toggleIcon.src = 'imagenes/moon-dark.svg';
+        toggleIcon.src = 'Imagenes/moon-dark.svg';
         toggleText.textContent = 'Dark Mode';
     }
 })
