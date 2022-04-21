@@ -590,8 +590,7 @@ footer{
 }
 
 #social .instagram:hover {
-    background-color: #405DE6;
-    background: linear-gradient(
+    background-color: linear-gradient(
         90deg, 
         #405DE6 0%,
         #5B51D8 10%,
