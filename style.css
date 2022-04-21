@@ -590,17 +590,5 @@ footer{
 }
 
 #social .instagram:hover {
-    background-color: linear-gradient(
-        90deg, 
-        #405DE6 0%,
-        #5B51D8 10%,
-        #833AB4 20%,
-        #C13584 30%,
-        #E1306C 40%, 
-        #FD1D1D 50%,
-        #F56040 60%,
-        #F77737 70%,
-        #FCAF45 80%,
-        #FFDC80 90%,
-        #405DE6 100%);
+    background-color: #7c3f06;
 }
