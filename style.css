@@ -1,11 +1,12 @@
 :root{
-    --color-text: #ae00ff;
+    --color-text: #970909;
     --border-text: 1px solid #303030;
     --bg-navfoot: rgb(8, 8, 8);
     --color-parrafo: rgb(168, 167, 167);
-    --bg-card: rgba(219, 162, 77, 0.5);
     --skills-bar-length: 0%;
     --bg-dark: rgb(22, 22, 22);
+    --bg-mrl: #303030;
+    --bg-lmrl: #bfbfbf;
 }
 
 *{
@@ -18,6 +19,17 @@
 body{
     background-color: var(--bg-dark);
     width: 100%;
+    transition: all 0.9s;
+}
+
+.light{
+    --border-text: 1px solid #303030;
+    --bg-navfoot: rgb(245, 244, 244);
+    --color-parrafo: rgb(36, 35, 35);
+    --bg-dark: rgb(233, 230, 230);
+    --bg-mrl: #e2dfdf;
+    --bg-lmrl: #0e0d0d;
+    transition: all 0.9s;
 }
 
 a{
@@ -65,15 +77,15 @@ ul{
 }
 
 .link-menu .link:hover , .link-menu_footer .link:hover{
-    box-shadow: 0 0 10px #ae00ff, 0 0 25px #001eff, 0 0 50px #ae00ff;
+    box-shadow: 0 0 10px #970909, 0 0 25px #e75602, 0 0 50px #970909;
     transition-delay: 0.1s;
 }
    
 .link-menu .link:active, .link-menu_footer .link:active{
-    background: #ae00af;
-    background: linear-gradient(to top right, #ae00af, #001eff);
+    background: #9b0c0c;
+    background: linear-gradient(to top right, #9b0c0c, #c52104);
     color: #bfbfbf;
-    box-shadow: 0 0 8px #ae00ff, 0 0 8px #001eff, 0 0 8px #ae00ff;
+    box-shadow: 0 0 8px #970909, 0 0 8px #c52104, 0 0 8px #970909;
 }
    
 .link-menu .link:active, .link-menu_footer .link:active{
@@ -117,6 +129,44 @@ ul{
     display: none;
 }
 
+.logo-navbar{
+    width: 70px;
+    height: 50px;
+}
+
+.logo-navbar img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* <-- Estilos del switches del modo dark/light --> */
+
+.switches{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.toggle-theme{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.toggle-theme_icon{
+    margin-right: 5px;
+    width: 20px;
+    transition: all 0.5s;
+}
+
+.toggle-theme_text{
+    font-size: 10px;
+    color: var(--color-text);
+}
+
 /* <-- Pantalla de un celular --> */
 
 @media screen and (max-width: 768px){
@@ -132,7 +182,7 @@ ul{
         display: flex;
         flex-direction: column;
         width: 100%;
-        background-color: #303030;
+        background-color: var(--bg-mrl);
         position: fixed;
         top: 70px;
         height: calc(100vh - 70px);
@@ -147,7 +197,7 @@ ul{
     
     .link-menu_responsive .link{
         padding: 8px;
-        color: #bfbfbf;
+        color: var(--bg-lmrl);
         text-transform: uppercase;
         font-size: 15px;
         transition: 1s;
@@ -156,9 +206,9 @@ ul{
     }
     
     .link-menu_responsive .link:hover{
-        background: #ae00af;
-        background: linear-gradient(to top right, #ae00af, #001eff);
-        box-shadow: 0 0 8px #ae00ff, 0 0 8px #001eff, 0 0 8px #ae00ff;
+        background: #9b0c0c;
+        background: linear-gradient(to top right, #9b0c0c, #c52104);
+        box-shadow: 0 0 8px #970909, 0 0 8px #c52104, 0 0 8px #970909;
     }
     
     .link-menu_responsive-visible{
