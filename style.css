@@ -470,6 +470,24 @@ h1, h2{
     }
 }
 
+/* <-- Texto que se encuentra en about --> */
+
+.container-text{
+    width: 98%;
+    height: auto;
+    padding: 10px;
+    background-color: var(--bg-navfoot);
+    margin: auto;
+    color: var(--color-parrafo);
+    border-radius: 5px;
+    border-bottom: 1px solid var(--color-text);
+    border-left: 1px solid var(--color-text);
+}
+
+.container-text p{
+    text-align: justify;
+}
+
 /* <-- Estilos del pie de pagina --> */
 
 footer{
