@@ -472,6 +472,16 @@ h1, h2{
 
 /* <-- Texto que se encuentra en about --> */
 
+.container-grid_about{
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+    "profile-grid date-1 date-2"
+    "profile-grid text-date";
+}
+
 .container-text{
     width: 98%;
     height: auto;
@@ -483,6 +493,19 @@ h1, h2{
     border-bottom: 1px solid var(--color-text);
     border-left: 1px solid var(--color-text);
     margin-bottom: 15px;
+    grid-area: text-date;
+}
+
+.profile-grid_about{
+    grid-area: profile-grid;
+}
+
+.container-date_uno{
+    grid-area: date-1;
+}
+
+.container-date_dos{
+    grid-area: date-2;
 }
 
 .container-text p{
